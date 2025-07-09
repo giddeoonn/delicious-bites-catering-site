@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delicous Bites</title>
+    <link rel="icon" type="image/png" href="images/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="off-screen-menu">
+        <div class="close-btn"><i class="fa-solid fa-xmark"></i></div>
+        <div>
+          <ul>
+            <li><a class="nav-links" href="#hero">Home</a></li>
+            <li><a class="nav-links" href="#about">About</a></li>
+            <li><a class="nav-links" href="#menu">Menu</a></li>
+            <li><a class="nav-links" href="#packages">Packages</a></li>
+            <li><a class="nav-links" href="#gallery">Gallery</a></li>
+            <li><a class="nav-links" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="mobile-nav">
+        <div class="logo">
+          <a href="#hero"
+            ><img src="images/logo.png" alt="DelicousBites-logo"
+          /></a>
+        </div>
+        <div class="ham-btn"><i class="fa-solid fa-bars"></i></div>
+      </div>
+      <div id="desktop-nav">
+        <a href="#hero"
+          ><img src="images/logo.png" alt="DelicousBites-logo"
+        /></a>
+        <div>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- HERO SECTION -->
+    <header id="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>Delicous Bites Catering</h1>
+        <p>Modern. Memorable. Made with Care.</p>
+        <a href="#contact">Book Now</a>
+      </div>
+    </header>
+
+    <main>
+      <!-- ABOUT SECTION -->
+      <section id="about">
+        <div class="about-overlay"></div>
+        <div class="about-content">
+          <h2>About Us</h2>
+          <p>
+            At Delicious Bites Cater, we specialize in delivering curated food
+            experiences that turn events into cherished memories. Whether it's
+            an intimate gathering or a grand celebration, we blend taste and
+            presentation to match your vision.
+          </p>
+          <p>🍽️ Customized menus for every event.</p>
+          <p>👩‍🍳 Passionate chefs with years of experience.</p>
+          <p>📦 Hassle-free setup and on-time service.</p>
+          <p>💬 Trusted by families, companies, and event planners.</p>
+        </div>
+      </section>
+
+      <!-- MENU SECTION -->
+      <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-items">
+          <div class="menu-card">
+            <h3>Appetizers</h3>
+            <div class="product-card">
+              <img src="images/menu/appetizers/1.png" alt="Mini Spring Rolls" />
+              <p>Mini Spring Rolls</p>
+            </div>
+            <div class="product-card">
+              <img src="images/menu/appetizers/2.png" alt="Cheese Platters" />
+              <p>Cheese Platters</p>
+            </div>
+          </div>
+          <div class="menu-card">
+            <h3>Main Courses</h3>
+            <div class="product-card">
+              <img
+                src="images/menu/main_course/3.png"
+                alt="Garlic Butter Chicken"
+              />
+              <p>Garlic Butter Chicken</p>
+            </div>
+            <div class="product-card">
+              <img src="images/menu/main_course/4.png" alt="Beef Caldereta" />
+              <p>Beef Caldereta</p>
+            </div>
+          </div>
+          <div class="menu-card">
+            <h3>Desserts</h3>
+            <div class="product-card">
+              <img src="images/menu/dessertz/5.png" alt="Mango Float" />
+              <p>Mango Float</p>
+            </div>
+            <div class="product-card">
+              <img src="images/menu/dessertz/6.png" alt="Leche Flan" />
+              <p>Leche Flan</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRICE PACKAGES SECTION -->
+      <section id="packages">
+        <h2>Price Packages</h2>
+        <div class="package-cards">
+          <div class="package-card">
+            <h3>The Gather & Dine</h3>
+            <p class="package-pricing">₱3,000</p>
+            <p class="package-desc">
+              <span><h4>Description:</h4></span>
+              Perfect for intimate events with a simple yet satisfying
+              selection.
+              <span><h4>What’s included:</h4></span>
+            </p>
+            <ul>
+              <li>50 pax</li>
+              <li>2 Main Dishes</li>
+              <li>1 Dessert</li>
+            </ul>
+          </div>
+
+          <div class="package-card">
+            <h3>The Feast Set</h3>
+            <p class="package-pricing">₱5,000</p>
+            <p class="package-desc">
+              <span><h4>Description:</h4></span>
+              A balanced choice for mid-sized gatherings with added variety and
+              flavor.
+              <span><h4>What’s included:</h4></span>
+            </p>
+            <ul>
+              <li>80 pax</li>
+              <li>3 Main Dishes</li>
+              <li>2 Desserts</li>
+            </ul>
+          </div>
+
+          <div class="package-card">
+            <h3>The Grand Banquet</h3>
+            <p class="package-pricing">₱8,000</p>
+            <p class="package-desc">
+              <span><h4>Description:</h4></span>
+              Designed for larger celebrations — elegant, complete, and
+              stress-free.
+              <span><h4>What’s included:</h4></span>
+            </p>
+            <ul>
+              <li>120 pax</li>
+              <li>Full Course Meal</li>
+              <li>Free Table Setup</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALLERY SECTION -->
+      <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-slider-container">
+          <button class="gallery-btn" id="gallery-prev">&#10094;</button>
+          <div class="gallery-slider" id="gallerySlider">
+            <img src="images/gallery/7.png" alt="Gallery Image 1" />
+            <img src="images/gallery/8.png" alt="Gallery Image 2" />
+            <img src="images/gallery/9.png" alt="Gallery Image 3" />
+            <img src="images/gallery/10.png" alt="Gallery Image 4" />
+          </div>
+          <button class="gallery-btn" id="gallery-next">&#10095;</button>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <p>📍 Gumble City | 📞 0912 345 6789 | 📧 delicousbites@catering.com</p>
+        <form
+          action="https://formsubmit.co/youremail@example.com"
+          method="POST"
+        >
+          <input type="text" name="name" placeholder="Name" required />
+          <input type="email" name="email" placeholder="Email" required />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      © 2025 Delicious Bites. All rights reserved. | Design & Develop by GiDEON
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
