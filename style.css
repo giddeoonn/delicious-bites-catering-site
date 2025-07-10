@@ -19,6 +19,9 @@ section {
   padding: 1rem;
   border-radius: 15px;
 }
+section h2 {
+  color: rgb(153, 99, 0);
+}
 main {
   max-width: 1200px;
   margin: auto;
@@ -78,6 +81,13 @@ nav #mobile-nav i {
 nav #mobile-nav img {
   width: 6rem;
 }
+nav a {
+  transition: 0.3s ease-in-out;
+  color: rgb(231, 162, 35);
+}
+nav a:hover {
+  color: orange;
+}
 /* ==== HERO ==== */
 #hero {
   background-image: url("images/hero.png");
@@ -129,6 +139,10 @@ nav #mobile-nav img {
   border: 2px solid white;
   border-radius: 10px;
 }
+#hero .hero-content a:hover {
+  background-color: white;
+  color: black;
+}
 /* ==== About Us ==== */
 #about {
   display: flex;
@@ -159,6 +173,11 @@ nav #mobile-nav img {
   flex-direction: column;
   align-items: center;
 }
+#menu h3 {
+  background-image: linear-gradient(to right, orange, rgb(255, 188, 62));
+  background-clip: text;
+  color: transparent;
+}
 .menu-items {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -179,6 +198,7 @@ nav #mobile-nav img {
   align-items: center;
   text-align: center;
   transition: transform 0.3s ease;
+  cursor: pointer;
 }
 .product-card:hover {
   transform: translateY(-5px);
@@ -267,16 +287,17 @@ nav #mobile-nav img {
 }
 .gallery-slider {
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  padding: 1rem 0;
+  padding: 1rem 0.5rem;
+  overflow-y: hidden;
 }
 .gallery-slider img {
   flex: 0 0 auto;
   width: 300px;
   height: auto;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
@@ -286,6 +307,7 @@ nav #mobile-nav img {
   transform: translateY(-50%);
   background: rgba(0, 0, 0, 0.05);
   border: none;
+  border-radius: 20px;
   color: white;
   font-size: 2rem;
   padding: 0.5rem 1rem;
@@ -321,7 +343,6 @@ nav #mobile-nav img {
   align-items: center;
   gap: 1.5rem;
   text-align: center;
-  max-width: 800px;
   margin: auto;
 }
 #contact h2 {
@@ -421,6 +442,7 @@ footer {
     box-shadow: 0 0 3px 3px #1f293732;
     width: 100%;
     z-index: 100;
+    padding: 0 1rem;
   }
   nav #desktop-nav img {
     width: 7rem;
@@ -434,6 +456,15 @@ footer {
     font-size: 1.5rem;
     padding: 0 1rem;
   }
+  #hero .hero-content h1 {
+    font-size: 5rem;
+  }
+  #hero .hero-content p {
+    font-size: 2.5rem;
+  }
+  #hero .hero-content a {
+    font-size: 1.5rem;
+  }
   #packages .package-cards {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -443,6 +474,13 @@ footer {
   .menu-items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+  #gallery {
+    width: 80%;
+    margin: auto;
+  }
+  #contact {
+    width: 80%;
   }
 }
 /* Animation base */
